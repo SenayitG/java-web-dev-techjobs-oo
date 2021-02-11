@@ -36,6 +36,21 @@ public class JobTests {
     public void testJobsForEquality() {
         assertFalse(job1.equals(job2));
 }
+@Test
+    public void testToString() {
+        if (job3.equals(job3)) {
+            assertEquals("ID: " + job3.getId() + "\n" +
+                    "Name: " + job3.getName() + "\n" +
+                    "Employer: " + job3.getEmployer() + "\n" +
+                    "Location: " + job3.getLocation() + "\n" +
+                    "Position Type: " + job3.getPositionType() + "\n" +
+                    "Core Competency: " + job3.getCoreCompetency(), job3.toString());
+       //@Override
+        } else if (job3.equals (" ")) {
+        System.out.println("Data not available");
+    }
+
+}
 
 }
 

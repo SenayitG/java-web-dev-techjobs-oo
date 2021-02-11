@@ -2,6 +2,8 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
+import static org.junit.Assert.assertEquals;
+
 public class Job {
 
     private int id;
@@ -32,6 +34,14 @@ public class Job {
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
 
+    }
+    public String toString() {
+        return  "ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n" +
+                "Core Competency: " + coreCompetency;
     }
 
     public String getName() {
