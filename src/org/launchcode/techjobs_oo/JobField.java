@@ -75,7 +75,10 @@ public abstract class JobField {
         return id;
     }
 
-
+    @Override
+    public String toString() {
+        return value;
+    }
 
     @Override
     public boolean equals(Object o) {
